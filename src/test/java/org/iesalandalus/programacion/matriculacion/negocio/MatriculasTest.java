@@ -1,6 +1,5 @@
 package org.iesalandalus.programacion.matriculacion.negocio;
 
-/*
 import org.iesalandalus.programacion.matriculacion.MainApp;
 import org.iesalandalus.programacion.matriculacion.dominio.*;
 import org.junit.jupiter.api.BeforeAll;
@@ -11,37 +10,36 @@ import javax.naming.OperationNotSupportedException;
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
-*/
+
 
 public class MatriculasTest {
-/*
-    private static final String ERROR_NO_EXCEPCION = "No deber√≠a haber saltado la excepci√≥n.";
+    private static final String ERROR_NO_EXCEPCION = "No deberÌa haber saltado la excepciÛn.";
     private static final String ERROR_CAPACIDAD_NO_CORRECTA = "ERROR: La capacidad debe ser mayor que cero.";
-    private static final String ERROR_INSERTAR_MATRICULA_NULA = "ERROR: No se puede insertar una matr√≠cula nula.";
-    private static final String ERROR_BORRAR_MATRICULA_NULA = "ERROR: No se puede borrar una matr√≠cula nula.";
-    private static final String ERROR_NO_MAS_MATRICULAS = "ERROR: No se aceptan m√°s matr√≠culas.";
-    private static final String ERROR_MATRICULA_EXISTE = "ERROR: Ya existe una matr√≠cula con ese identificador.";
-    private static final String ERROR_MATRICULA_BORRAR_NO_EXISTE = "ERROR: No existe ninguna matr√≠cula como la indicada.";
+    private static final String ERROR_INSERTAR_MATRICULA_NULA = "ERROR: No se puede insertar una matrÌcula nula.";
+    private static final String ERROR_BORRAR_MATRICULA_NULA = "ERROR: No se puede borrar una matrÌcula nula.";
+    private static final String ERROR_NO_MAS_MATRICULAS = "ERROR: No se aceptan m·s matrÌculas.";
+    private static final String ERROR_MATRICULA_EXISTE = "ERROR: Ya existe una matrÌcula con ese identificador.";
+    private static final String ERROR_MATRICULA_BORRAR_NO_EXISTE = "ERROR: No existe ninguna matrÌcula como la indicada.";
 
-    private static final String OPERACION_NO_PERMITIDA = "Deber√≠a haber saltado una excepci√≥n indicando que dicha operaci√≥n no est√° permitida.";
-    private static final String MATRICULA_NULA = "Deber√≠a haber saltado una excepci√≥n indicando que no se puede operar con una matr√≠cula nula.";
-    private static final String MENSAJE_EXCEPCION_NO_CORRECTO = "El mensaje devuelto por la excepci√≥n no es correcto.";
-    private static final String TIPO_EXCEPCION_NO_CORRECTO = "El tipo de la excepci√≥n no es correcto.";
-    private static final String EXCEPCION_NO_PROCEDE = "No deber√≠a haber saltado la excepci√≥n.";
-    private static final String OPERACION_NO_REALIZADA = "La operaci√≥n no la ha realizado correctamente.";
-    private static final String MATRICULAS_NO_CREADAS = "Deber√≠a haber creado las matr√≠culas correctamente.";
+    private static final String OPERACION_NO_PERMITIDA = "DeberÌa haber saltado una excepciÛn indicando que dicha operaciÛn no est· permitida.";
+    private static final String MATRICULA_NULA = "DeberÌa haber saltado una excepciÛn indicando que no se puede operar con una matrÌcula nula.";
+    private static final String MENSAJE_EXCEPCION_NO_CORRECTO = "El mensaje devuelto por la excepciÛn no es correcto.";
+    private static final String TIPO_EXCEPCION_NO_CORRECTO = "El tipo de la excepciÛn no es correcto.";
+    private static final String EXCEPCION_NO_PROCEDE = "No deberÌa haber saltado la excepciÛn.";
+    private static final String OPERACION_NO_REALIZADA = "La operaciÛn no la ha realizado correctamente.";
+    private static final String MATRICULAS_NO_CREADAS = "DeberÌa haber creado las matrÌculas correctamente.";
     private static final String REFERENCIA_NO_ESPERADA = "La referencia devuelta es la misma que la pasada.";
-    private static final String TAMANO_NO_ESPERADO = "El tama√±o devuelto no es el esperado.";
+    private static final String TAMANO_NO_ESPERADO = "El tamaÒo devuelto no es el esperado.";
     private static final String CAPACIDAD_NO_ESPERADA="La capacidad devuelta no es la esperada.";
-    private static final String MATRICULA_NO_ESPERADA = "La matr√≠cula devuelta no es la que deber√≠a ser.";
-    private static final String OBJETO_DEBERIA_SER_NULO = "No se deber√≠a haber creado el objeto.";
+    private static final String MATRICULA_NO_ESPERADA = "La matrÌcula devuelta no es la que deberÌa ser.";
+    private static final String OBJETO_DEBERIA_SER_NULO = "No se deberÌa haber creado el objeto.";
 
-    private static final String NOMBRE_JRJR = "Jos√© Ram√≥n Jim√©nez Reyes";
+    private static final String NOMBRE_JRJR = "JosÈ RamÛn JimÈnez Reyes";
     private static final String DNI_JRJR = "11223344B";
     private static final String TELEFONO_JRJR = "950112233";
     private static final String CORREO_JRJR = "joseramon.jimenez@iesalandalus.org";
     private static final LocalDate FECHA_NACIMIENTO_JRJR=LocalDate.of(2002, 9, 15);
-    private static final String NOMBRE_ARDR = "Andr√©s Rubio Del R√≠o";
+    private static final String NOMBRE_ARDR = "AndrÈs Rubio Del RÌo";
     private static final String DNI_ARDR = "22334455Y";
     private static final String TELEFONO_ARDR = "666223344";
     private static final String CORREO_ARDR = "andres.rubio@iesalandalus.org";
@@ -59,7 +57,7 @@ public class MatriculasTest {
     private static final LocalDate FECHA_MATRICULACION=LocalDate.now().minusDays(3);
 
     private static final String CODIGO_ASIGNATURA="0100";
-    private static final String NOMBRE_ASIGNATURA="Programaci√≥n";
+    private static final String NOMBRE_ASIGNATURA="ProgramaciÛn";
     private static final int HORAS_ASIGNATURA=256;
     private static final Curso CURSO_ASIGNATURA=Curso.PRIMERO;
     private static final int HORAS_DESDOBLE_ASIGNATURA=4;
@@ -71,7 +69,7 @@ public class MatriculasTest {
     private static final int HORAS_DESDOBLE_ASIGNATURA_2=3;
 
     private static final String CODIGO_ASIGNATURA_3="0300";
-    private static final String NOMBRE_ASIGNATURA_3="Administraci√≥n de Sistemas Operativos";
+    private static final String NOMBRE_ASIGNATURA_3="AdministraciÛn de Sistemas Operativos";
     private static final int HORAS_ASIGNATURA_3=120;
     private static final Curso CURSO_ASIGNATURA_3=Curso.SEGUNDO;
     private static final int HORAS_DESDOBLE_ASIGNATURA_3=0;
@@ -80,7 +78,7 @@ public class MatriculasTest {
 
 
     private static final int CODIGO_CF_1=1225;
-    private static final String FAMILIA_PROFESIONAL_CF="Inform√°tica y Comunicaciones";
+    private static final String FAMILIA_PROFESIONAL_CF="Inform·tica y Comunicaciones";
     private static final String NOMBRE_CICLO_FORMATIVO="DAW";
     private static final Grado GRADO_CF=Grado.GDCFGS;
     private static final int HORAS_CICLO_FORMATIVO=1000;
@@ -461,6 +459,4 @@ public class MatriculasTest {
         }
     }
 
-
-*/
 }

@@ -8,22 +8,22 @@ import java.time.format.DateTimeFormatter;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AlumnoTest {
-/*
+
     private static final String CADENA_NO_ESPERADA = "La cadena devuelta no es la esperada.";
 
     private static final String NOMBRE_NO_ESPERADO = "El nombre devuelto no es el mismo que el pasado al constructor.";
     private static final String DNI_NO_ESPERADO = "El DNI devuelto no es el mismo que el pasado al constructor.";
-    private static final String TELEFONO_NO_ESPERADO = "El telÃ©fono devuelto no es el mismo que el pasado al constructor.";
+    private static final String TELEFONO_NO_ESPERADO = "El teléfono devuelto no es el mismo que el pasado al constructor.";
     private static final String CORREO_NO_ESPERADO = "El correo devuelto no es el mismo que el pasado al constructor.";
     private static final String FECHA_NACIMIENTO_NO_ESPERADA = "La fecha de nacimiento devuelta no es la misma que la pasada al constructor.";
-    private static final String NIA_NO_ESPERADO = "El cÃ¡lculo del NÃºmero de IdentificaciÃ³n del Alumno no es el correcto.";
+    private static final String NIA_NO_ESPERADO = "El cálculo del Número de Identificación del Alumno no es el correcto.";
 
-    private static final String NOMBRE_JRJR = "JosÃ© RamÃ³n JimÃ©nez Reyes";
+    private static final String NOMBRE_JRJR = "José Ramón Jiménez Reyes";
     private static final String DNI_JRJR = "11223344B";
     private static final String TELEFONO_JRJR = "950112233";
     private static final String CORREO_JRJR = "joseramon.jimenez@iesalandalus.org";
-    private static final String NOMBRE_MAL_ARDR = "  ANDRÃ‰S   RuBiO   dEl             rÃ­o";
-    private static final String NOMBRE_ARDR = "AndrÃ©s Rubio Del RÃ­o";
+    private static final String NOMBRE_MAL_ARDR = "  ANDRÉS   RuBiO   dEl             río";
+    private static final String NOMBRE_ARDR = "Andrés Rubio Del Río";
     private static final String DNI_ARDR = "22334455Y";
     private static final String TELEFONO_ARDR = "666223344";
     private static final String CORREO_ARDR = "andres.rubio@iesalandalus.org";
@@ -33,29 +33,29 @@ public class AlumnoTest {
     private static final String NIA_JRJR=NOMBRE_JRJR.toLowerCase().substring(0,4)+DNI_JRJR.substring(5,8);;
     private static final String NIA_ARDR=NOMBRE_ARDR.toLowerCase().substring(0,4)+DNI_ARDR.substring(5,8);;
     private static final String FORMATO_FECHA="dd/MM/yyyy";
-    private static final String TIPO_EXCEPCION_NO_CORRECTA = "El tipo de la excepciÃ³n no es correcto.";
-    private static final String NOMBRE_INCORRECTO = "DeberÃ­a haber saltado una excepciÃ³n indicando que el nombre es incorrecto";
+    private static final String TIPO_EXCEPCION_NO_CORRECTA = "El tipo de la excepción no es correcto.";
+    private static final String NOMBRE_INCORRECTO = "Debería haber saltado una excepción indicando que el nombre es incorrecto";
     private static final String ERROR_NOMBRE_NULO = "ERROR: El nombre de un alumno no puede ser nulo.";
-    private static final String ERROR_NOMBRE_NO_VALIDO = "ERROR: El nombre de un alumno no puede estar vacÃ­o.";
-    private static final String DNI_INCORRECTO = "DeberÃ­a haber saltado una excepciÃ³n indicando que el DNI es incorrecto";
+    private static final String ERROR_NOMBRE_NO_VALIDO = "ERROR: El nombre de un alumno no puede estar vacío.";
+    private static final String DNI_INCORRECTO = "Debería haber saltado una excepción indicando que el DNI es incorrecto";
     private static final String ERROR_DNI_NULO = "ERROR: El dni de un alumno no puede ser nulo.";
-    private static final String ERROR_DNI_NO_VALIDO = "ERROR: El dni del alumno no tiene un formato vÃ¡lido.";
+    private static final String ERROR_DNI_NO_VALIDO = "ERROR: El dni del alumno no tiene un formato válido.";
     private static final String ERROR_CORREO_NULO = "ERROR: El correo de un alumno no puede ser nulo.";
-    private static final String CORREO_INCORRECTO = "DeberÃ­a haber saltado una excepciÃ³n indicando que el correo es incorrecto";
-    private static final String ERROR_CORREO_NO_VALIDO = "ERROR: El correo del alumno no tiene un formato vÃ¡lido.";
-    private static final String ERROR_TELEFONO_NO_VALIDO = "ERROR: El telÃ©fono del alumno no tiene un formato vÃ¡lido.";
+    private static final String CORREO_INCORRECTO = "Debería haber saltado una excepción indicando que el correo es incorrecto";
+    private static final String ERROR_CORREO_NO_VALIDO = "ERROR: El correo del alumno no tiene un formato válido.";
+    private static final String ERROR_TELEFONO_NO_VALIDO = "ERROR: El teléfono del alumno no tiene un formato válido.";
 
-    private static final String MENSAJE_EXCEPCION_NO_CORRECTO = "El mensaje devuelto por la excepciÃ³n no es correcto.";
-    private static final String OBJETO_DEBERIA_SER_NULO = "No se deberÃ­a haber creado el objeto alumno.";
+    private static final String MENSAJE_EXCEPCION_NO_CORRECTO = "El mensaje devuelto por la excepción no es correcto.";
+    private static final String OBJETO_DEBERIA_SER_NULO = "No se debería haber creado el objeto alumno.";
     private static final String ERROR_LETRA_DNI_NO_VALIDA = "ERROR: La letra del dni del alumno no es correcta.";
-    private static final String TELEFONO_INCORRECTO = "DeberÃ­a haber saltado una excepciÃ³n indicando que el telÃ©fono es incorrecto";
+    private static final String TELEFONO_INCORRECTO = "Debería haber saltado una excepción indicando que el teléfono es incorrecto";
 
-    private static final String ERROR_TELEFONO_NULO = "ERROR: El telÃ©fono de un alumno no puede ser nulo.";
-    private static final String FECHA_NACIMIENTO_INCORRECTA = "DeberÃ­a haber saltado una excepciÃ³n indicando que la fecha de nacimiento es incorrecta";
+    private static final String ERROR_TELEFONO_NULO = "ERROR: El teléfono de un alumno no puede ser nulo.";
+    private static final String FECHA_NACIMIENTO_INCORRECTA = "Debería haber saltado una excepción indicando que la fecha de nacimiento es incorrecta";
     private static final String ERROR_FECHA_NULA = "ERROR: La fecha de nacimiento de un alumno no puede ser nula.";
-    private static final String ERROR_FECHA_NACIMIENTO_INCORRECTA = "ERROR: La edad del alumno debe ser mayor o igual a 16 aÃ±os.";
-    private static final String ALUMNO_NO_ESPERADO = "El alumno copiado deberÃ­a ser el mismo que el pasado como parÃ¡metro.";
-    private static final String ALUMNO_NULO = "DeberÃ­a haber saltado una excepciÃ³n indicando que no se puede copiar un alumno nulo.";
+    private static final String ERROR_FECHA_NACIMIENTO_INCORRECTA = "ERROR: La edad del alumno debe ser mayor o igual a 16 años.";
+    private static final String ALUMNO_NO_ESPERADO = "El alumno copiado debería ser el mismo que el pasado como parámetro.";
+    private static final String ALUMNO_NULO = "Debería haber saltado una excepción indicando que no se puede copiar un alumno nulo.";
     private static final String ERROR_COPIAR_ALUMNO_NULO = "ERROR: No es posible copiar un alumno nulo.";
 
     @Test
@@ -394,11 +394,10 @@ public class AlumnoTest {
     public void toStringDevuelveLaCadenaEsperada() {
         Alumno alumno = new Alumno(NOMBRE_JRJR, DNI_JRJR, CORREO_JRJR, TELEFONO_JRJR, FECHA_NACIMIENTO_JRJR);
 
-        assertEquals(String.format("NÃºmero de IdentificaciÃ³n del Alumnado (NIA)=%s " + "nombre=%s (%s), DNI=%s, correo=%s, telÃ©fono=%s, fecha nacimiento=%s",NIA_JRJR, NOMBRE_JRJR, "JRJR", DNI_JRJR, CORREO_JRJR, TELEFONO_JRJR, FECHA_NACIMIENTO_JRJR.format(DateTimeFormatter.ofPattern(FORMATO_FECHA))), alumno.toString(), CADENA_NO_ESPERADA);
+        assertEquals(String.format("Número de Identificación del Alumnado (NIA)=%s " + "nombre=%s (%s), DNI=%s, correo=%s, teléfono=%s, fecha nacimiento=%s",NIA_JRJR, NOMBRE_JRJR, "JRJR", DNI_JRJR, CORREO_JRJR, TELEFONO_JRJR, FECHA_NACIMIENTO_JRJR.format(DateTimeFormatter.ofPattern(FORMATO_FECHA))), alumno.toString(), CADENA_NO_ESPERADA);
 
         alumno = new Alumno(NOMBRE_MAL_ARDR, DNI_ARDR, CORREO_ARDR, TELEFONO_ARDR, FECHA_NACIMIENTO_ARDR);
-        assertEquals(String.format("NÃºmero de IdentificaciÃ³n del Alumnado (NIA)=%s " + "nombre=%s (%s), DNI=%s, correo=%s, telÃ©fono=%s, fecha nacimiento=%s", NIA_ARDR, NOMBRE_ARDR, "ARDR", DNI_ARDR, CORREO_ARDR, TELEFONO_ARDR, FECHA_NACIMIENTO_ARDR.format(DateTimeFormatter.ofPattern(FORMATO_FECHA))), alumno.toString(), CADENA_NO_ESPERADA);
+        assertEquals(String.format("Número de Identificación del Alumnado (NIA)=%s " + "nombre=%s (%s), DNI=%s, correo=%s, teléfono=%s, fecha nacimiento=%s", NIA_ARDR, NOMBRE_ARDR, "ARDR", DNI_ARDR, CORREO_ARDR, TELEFONO_ARDR, FECHA_NACIMIENTO_ARDR.format(DateTimeFormatter.ofPattern(FORMATO_FECHA))), alumno.toString(), CADENA_NO_ESPERADA);
     }
 
- */
 }

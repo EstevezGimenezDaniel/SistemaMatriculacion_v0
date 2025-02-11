@@ -1,5 +1,5 @@
 package org.iesalandalus.programacion.matriculacion.negocio;
-/*
+
 import org.iesalandalus.programacion.matriculacion.MainApp;
 import org.iesalandalus.programacion.matriculacion.dominio.Alumno;
 import org.iesalandalus.programacion.matriculacion.dominio.CicloFormativo;
@@ -11,29 +11,28 @@ import javax.naming.OperationNotSupportedException;
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
-*/
 
 public class CiclosFormativosTest {
-/*
+
     private static final String ERROR_CAPACIDAD_NO_CORRECTA = "ERROR: La capacidad debe ser mayor que cero.";
     private static final String ERROR_INSERTAR_CICLO_FORMATIVO_NULO = "ERROR: No se puede insertar un ciclo formativo nulo.";
     private static final String ERROR_BORRAR_CICLO_FORMATIVO_NULO = "ERROR: No se puede borrar un ciclo formativo nulo.";
-    private static final String ERROR_NO_MAS_CICLOS_FORMATIVOS = "ERROR: No se aceptan m√°s ciclos formativos.";
-    private static final String ERROR_CICLO_FORMATIVO_EXISTE = "ERROR: Ya existe un ciclo formativo con ese c√≥digo.";
-    private static final String ERROR_CICLO_FORMATIVO_BORRAR_NO_EXISTE = "ERROR: No existe ning√∫n ciclo formativo como el indicado.";
+    private static final String ERROR_NO_MAS_CICLOS_FORMATIVOS = "ERROR: No se aceptan m·s ciclos formativos.";
+    private static final String ERROR_CICLO_FORMATIVO_EXISTE = "ERROR: Ya existe un ciclo formativo con ese cÛdigo.";
+    private static final String ERROR_CICLO_FORMATIVO_BORRAR_NO_EXISTE = "ERROR: No existe ning˙n ciclo formativo como el indicado.";
 
-    private static final String OPERACION_NO_PERMITIDA = "Deber√≠a haber saltado una excepci√≥n indicando que dicha operaci√≥n no est√° permitida.";
-    private static final String CICLO_FORMATIVO_NULO = "Deber√≠a haber saltado una excepci√≥n indicando que no se puede operar con un ciclo formativo nulo.";
-    private static final String MENSAJE_EXCEPCION_NO_CORRECTO = "El mensaje devuelto por la excepci√≥n no es correcto.";
-    private static final String TIPO_EXCEPCION_NO_CORRECTO = "El tipo de la excepci√≥n no es correcto.";
-    private static final String EXCEPCION_NO_PROCEDE = "No deber√≠a haber saltado la excepci√≥n.";
-    private static final String OPERACION_NO_REALIZADA = "La operaci√≥n no la ha realizado correctamente.";
-    private static final String CICLOS_FORMATIVOS_NO_CREADOS = "Deber√≠a haber creado los ciclos formativos correctamente.";
+    private static final String OPERACION_NO_PERMITIDA = "DeberÌa haber saltado una excepciÛn indicando que dicha operaciÛn no est· permitida.";
+    private static final String CICLO_FORMATIVO_NULO = "DeberÌa haber saltado una excepciÛn indicando que no se puede operar con un ciclo formativo nulo.";
+    private static final String MENSAJE_EXCEPCION_NO_CORRECTO = "El mensaje devuelto por la excepciÛn no es correcto.";
+    private static final String TIPO_EXCEPCION_NO_CORRECTO = "El tipo de la excepciÛn no es correcto.";
+    private static final String EXCEPCION_NO_PROCEDE = "No deberÌa haber saltado la excepciÛn.";
+    private static final String OPERACION_NO_REALIZADA = "La operaciÛn no la ha realizado correctamente.";
+    private static final String CICLOS_FORMATIVOS_NO_CREADOS = "DeberÌa haber creado los ciclos formativos correctamente.";
     private static final String REFERENCIA_NO_ESPERADA = "La referencia devuelta es la misma que la pasada.";
-    private static final String TAMANO_NO_ESPERADO = "El tama√±o devuelto no es el esperado.";
+    private static final String TAMANO_NO_ESPERADO = "El tamaÒo devuelto no es el esperado.";
     private static final String CAPACIDAD_NO_ESPERADA="La capacidad devuelta no es la esperada.";
-    private static final String CICLO_FORMATIVO_NO_ESPERADO = "El ciclo formativo devuelto no es el que deber√≠a ser.";
-    private static final String OBJETO_DEBERIA_SER_NULO = "No se deber√≠a haber creado el objeto.";
+    private static final String CICLO_FORMATIVO_NO_ESPERADO = "El ciclo formativo devuelto no es el que deberÌa ser.";
+    private static final String OBJETO_DEBERIA_SER_NULO = "No se deberÌa haber creado el objeto.";
 
     private static CicloFormativo cf1;
     private static CicloFormativo cf2;
@@ -41,7 +40,7 @@ public class CiclosFormativosTest {
     private static CicloFormativo cfRepetido1;
 
     private static final int CODIGO_CF_1=1225;
-    private static final String FAMILIA_PROFESIONAL_CF="Inform√°tica y Comunicaciones";
+    private static final String FAMILIA_PROFESIONAL_CF="Inform·tica y Comunicaciones";
     private static final String NOMBRE_CICLO_FORMATIVO="DAW";
     private static final Grado GRADO_CF=Grado.GDCFGS;
     private static final int HORAS_CICLO_FORMATIVO=1000;
@@ -381,7 +380,5 @@ public class CiclosFormativosTest {
             fail(TIPO_EXCEPCION_NO_CORRECTO);
         }
     }
-
-*/
 
 }

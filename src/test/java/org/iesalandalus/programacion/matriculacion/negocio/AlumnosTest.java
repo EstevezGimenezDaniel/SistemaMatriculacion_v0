@@ -1,6 +1,5 @@
 package org.iesalandalus.programacion.matriculacion.negocio;
 
-/*
 import org.iesalandalus.programacion.matriculacion.MainApp;
 import org.iesalandalus.programacion.matriculacion.dominio.Alumno;
 import org.junit.jupiter.api.BeforeAll;
@@ -10,36 +9,36 @@ import javax.naming.OperationNotSupportedException;
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
-*/
+
 
 public class AlumnosTest {
-/*
+
     private static final String ERROR_CAPACIDAD_NO_CORRECTA = "ERROR: La capacidad debe ser mayor que cero.";
     private static final String ERROR_INSERTAR_ALUMNO_NULO = "ERROR: No se puede insertar un alumno nulo.";
     private static final String ERROR_BORRAR_ALUMNO_NULO = "ERROR: No se puede borrar un alumno nulo.";
-    private static final String ERROR_NO_MAS_ALUMNOS = "ERROR: No se aceptan m√°s alumnos.";
+    private static final String ERROR_NO_MAS_ALUMNOS = "ERROR: No se aceptan m·s alumnos.";
     private static final String ERROR_ALUMNO_EXISTE = "ERROR: Ya existe un alumno con ese dni.";
-    private static final String ERROR_ALUMNO_BORRAR_NO_EXISTE = "ERROR: No existe ning√∫n alumno como el indicado.";
+    private static final String ERROR_ALUMNO_BORRAR_NO_EXISTE = "ERROR: No existe ning˙n alumno como el indicado.";
 
-    private static final String OPERACION_NO_PERMITIDA = "Deber√≠a haber saltado una excepci√≥n indicando que dicha operaci√≥n no est√° permitida.";
-    private static final String ALUMNO_NULO = "Deber√≠a haber saltado una excepci√≥n indicando que no se puede operar con un alumno nulo.";
-    private static final String MENSAJE_EXCEPCION_NO_CORRECTO = "El mensaje devuelto por la excepci√≥n no es correcto.";
-    private static final String TIPO_EXCEPCION_NO_CORRECTO = "El tipo de la excepci√≥n no es correcto.";
-    private static final String EXCEPCION_NO_PROCEDE = "No deber√≠a haber saltado la excepci√≥n.";
-    private static final String OPERACION_NO_REALIZADA = "La operaci√≥n no la ha realizado correctamente.";
-    private static final String ALUMNOS_NO_CREADOS = "Deber√≠a haber creado los alumnos correctamente.";
+    private static final String OPERACION_NO_PERMITIDA = "DeberÌa haber saltado una excepciÛn indicando que dicha operaciÛn no est· permitida.";
+    private static final String ALUMNO_NULO = "DeberÌa haber saltado una excepciÛn indicando que no se puede operar con un alumno nulo.";
+    private static final String MENSAJE_EXCEPCION_NO_CORRECTO = "El mensaje devuelto por la excepciÛn no es correcto.";
+    private static final String TIPO_EXCEPCION_NO_CORRECTO = "El tipo de la excepciÛn no es correcto.";
+    private static final String EXCEPCION_NO_PROCEDE = "No deberÌa haber saltado la excepciÛn.";
+    private static final String OPERACION_NO_REALIZADA = "La operaciÛn no la ha realizado correctamente.";
+    private static final String ALUMNOS_NO_CREADOS = "DeberÌa haber creado los alumnos correctamente.";
     private static final String REFERENCIA_NO_ESPERADA = "La referencia devuelta es la misma que la pasada.";
-    private static final String TAMANO_NO_ESPERADO = "El tama√±o devuelto no es el esperado.";
+    private static final String TAMANO_NO_ESPERADO = "El tamaÒo devuelto no es el esperado.";
     private static final String CAPACIDAD_NO_ESPERADA="La capacidad devuelta no es la esperada.";
-    private static final String ALUMNO_NO_ESPERADO = "El alumno devuelto no es el que deber√≠a ser.";
-    private static final String OBJETO_DEBERIA_SER_NULO = "No se deber√≠a haber creado el objeto.";
+    private static final String ALUMNO_NO_ESPERADO = "El alumno devuelto no es el que deberÌa ser.";
+    private static final String OBJETO_DEBERIA_SER_NULO = "No se deberÌa haber creado el objeto.";
 
-    private static final String NOMBRE_JRJR = "Jos√© Ram√≥n Jim√©nez Reyes";
+    private static final String NOMBRE_JRJR = "JosÈ RamÛn JimÈnez Reyes";
     private static final String DNI_JRJR = "11223344B";
     private static final String TELEFONO_JRJR = "950112233";
     private static final String CORREO_JRJR = "joseramon.jimenez@iesalandalus.org";
     private static final LocalDate FECHA_NACIMIENTO_JRJR=LocalDate.of(2002, 9, 15);
-    private static final String NOMBRE_ARDR = "Andr√©s Rubio Del R√≠o";
+    private static final String NOMBRE_ARDR = "AndrÈs Rubio Del RÌo";
     private static final String DNI_ARDR = "22334455Y";
     private static final String TELEFONO_ARDR = "666223344";
     private static final String CORREO_ARDR = "andres.rubio@iesalandalus.org";
@@ -385,7 +384,5 @@ public class AlumnosTest {
             fail(TIPO_EXCEPCION_NO_CORRECTO);
         }
     }
-
-*/
 
 }

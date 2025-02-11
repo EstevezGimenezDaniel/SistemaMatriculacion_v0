@@ -10,33 +10,32 @@ import java.time.format.DateTimeFormatter;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MatriculaTest {
-/*
-    private static final String ERROR_EXCEPCION = "Deber√≠a haber saltado la excepci√≥n.";
-    private static final String ERROR_NO_EXCEPCION = "No deber√≠a haber saltado la excepci√≥n.";
-    private static final String ALUMNO_NO_ESPERADO = "El alumno devuelto no es el que deber√≠a ser.";
-    private static final String ASIGNATURA_NO_ESPERADA = "La asignatura devuelta no es la que deber√≠a ser.";
+    private static final String ERROR_EXCEPCION = "DeberÌa haber saltado la excepciÛn.";
+    private static final String ERROR_NO_EXCEPCION = "No deberÌa haber saltado la excepciÛn.";
+    private static final String ALUMNO_NO_ESPERADO = "El alumno devuelto no es el que deberÌa ser.";
+    private static final String ASIGNATURA_NO_ESPERADA = "La asignatura devuelta no es la que deberÌa ser.";
 
-    private static final String OBJETO_DEBERIA_SER_NULO = "No se deber√≠a haber creado el objeto matr√≠cula.";
-    private static final String MENSAJE_EXCEPCION_NO_CORRECTO = "El mensaje devuelto por la excepci√≥n no es correcto.";
-    private static final String ERROR_ALUMNO_NULO="ERROR: El alumno de una matr√≠cula no puede ser nulo.";
-    private static final String ERROR_LISTA_ASIGNATURAS_NULA="ERROR: La lista de asignaturas de una matr√≠cula no puede ser nula.";
-    private static final String ERROR_ID_MATRICULA_INCORRECTO="ERROR: El identificador de una matr√≠cula no puede ser menor o igual a 0.";
-    private static final String ERROR_CURSO_ACADEMICO_NULO="ERROR: El curso acad√©mico de una matr√≠cula no puede ser nulo.";
-    private static final String ERROR_CURSO_ACADEMICO_INCORRECTO="ERROR: El curso acad√©mico de una matr√≠cula no puede estar vac√≠o.";
-    private static final String ERROR_CURSO_ACADEMICO_FORMATO_INVALIDO="ERROR: El formato del curso acad√©mico no es correcto.";
-    private static final String ERROR_FECHA_MATRICULACION_NULA="ERROR: La fecha de matriculaci√≥n de una m√°tricula no puede ser nula.";
-    private static final String ERROR_FECHA_MATRICULACION_INCORRECTA="ERROR: La fecha de matriculaci√≥n no puede ser posterior a hoy.";
-    private static final String ERROR_FECHA_MATRICULACION_INCORRECTA_SUPERA_DIAS_PREVIOS="ERROR: La fecha de matriculaci√≥n no puede ser anterior a " + Matricula.MAXIMO_DIAS_ANTERIOR_MATRICULA + " d√≠as.";
-    private static final String ERROR_MATRICULA_SUPERA_LIMITE_HORAS="ERROR: No se puede realizar la matr√≠cula ya que supera el m√°ximo de horas permitidas (" + Matricula.MAXIMO_NUMERO_HORAS_MATRICULA + " horas).";
-    private static final String MATRICULA_NULA = "Deber√≠a haber saltado una excepci√≥n indicando que no se puede copiar una matr√≠cula nula.";
-    private static final String FECHA_ANULACION_INCORRECTA="Deber√≠a haber saltado una excepci√≥n indicando que la fecha de anulaci√≥n no es correcta.";
-    private static final String FECHA_ANULACION_POSTERIOR_HOY="ERROR: La fecha de anulaci√≥n de una matr√≠cula no puede ser posterior a hoy.";
-    private static final String FECHA_ANULACION_ANTERIOR_FECHA_MATRICULACION="ERROR: La fecha de anulaci√≥n no puede ser anterior a la fecha de matriculaci√≥n.";
-    private static final String FECHA_ANULACION_ANTERIOR_FECHA_MAXIMA_ANTERIOR_ANULACION="ERROR: La fecha de anulaci√≥n no puede ser anterior a " + Matricula.MAXIMO_MESES_ANTERIOR_ANULACION + " meses.";
-    private static final String ERROR_COPIAR_MATRICULA_NULA = "ERROR: No es posible copiar una matr√≠cula nula.";
-    private static final String TIPO_EXCEPCION_NO_CORRECTA = "El tipo de la excepci√≥n no es correcto.";
+    private static final String OBJETO_DEBERIA_SER_NULO = "No se deberÌa haber creado el objeto matrÌcula.";
+    private static final String MENSAJE_EXCEPCION_NO_CORRECTO = "El mensaje devuelto por la excepciÛn no es correcto.";
+    private static final String ERROR_ALUMNO_NULO="ERROR: El alumno de una matrÌcula no puede ser nulo.";
+    private static final String ERROR_LISTA_ASIGNATURAS_NULA="ERROR: La lista de asignaturas de una matrÌcula no puede ser nula.";
+    private static final String ERROR_ID_MATRICULA_INCORRECTO="ERROR: El identificador de una matrÌcula no puede ser menor o igual a 0.";
+    private static final String ERROR_CURSO_ACADEMICO_NULO="ERROR: El curso acadÈmico de una matrÌcula no puede ser nulo.";
+    private static final String ERROR_CURSO_ACADEMICO_INCORRECTO="ERROR: El curso acadÈmico de una matrÌcula no puede estar vacÌo.";
+    private static final String ERROR_CURSO_ACADEMICO_FORMATO_INVALIDO="ERROR: El formato del curso acadÈmico no es correcto.";
+    private static final String ERROR_FECHA_MATRICULACION_NULA="ERROR: La fecha de matriculaciÛn de una m·tricula no puede ser nula.";
+    private static final String ERROR_FECHA_MATRICULACION_INCORRECTA="ERROR: La fecha de matriculaciÛn no puede ser posterior a hoy.";
+    private static final String ERROR_FECHA_MATRICULACION_INCORRECTA_SUPERA_DIAS_PREVIOS="ERROR: La fecha de matriculaciÛn no puede ser anterior a " + Matricula.MAXIMO_DIAS_ANTERIOR_MATRICULA + " dÌas.";
+    private static final String ERROR_MATRICULA_SUPERA_LIMITE_HORAS="ERROR: No se puede realizar la matrÌcula ya que supera el m·ximo de horas permitidas (" + Matricula.MAXIMO_NUMERO_HORAS_MATRICULA + " horas).";
+    private static final String MATRICULA_NULA = "DeberÌa haber saltado una excepciÛn indicando que no se puede copiar una matrÌcula nula.";
+    private static final String FECHA_ANULACION_INCORRECTA="DeberÌa haber saltado una excepciÛn indicando que la fecha de anulaciÛn no es correcta.";
+    private static final String FECHA_ANULACION_POSTERIOR_HOY="ERROR: La fecha de anulaciÛn de una matrÌcula no puede ser posterior a hoy.";
+    private static final String FECHA_ANULACION_ANTERIOR_FECHA_MATRICULACION="ERROR: La fecha de anulaciÛn no puede ser anterior a la fecha de matriculaciÛn.";
+    private static final String FECHA_ANULACION_ANTERIOR_FECHA_MAXIMA_ANTERIOR_ANULACION="ERROR: La fecha de anulaciÛn no puede ser anterior a " + Matricula.MAXIMO_MESES_ANTERIOR_ANULACION + " meses.";
+    private static final String ERROR_COPIAR_MATRICULA_NULA = "ERROR: No es posible copiar una matrÌcula nula.";
+    private static final String TIPO_EXCEPCION_NO_CORRECTA = "El tipo de la excepciÛn no es correcto.";
 
-    private static final String NOMBRE_JRJR = "Jos√© Ram√≥n Jim√©nez Reyes";
+    private static final String NOMBRE_JRJR = "JosÈ RamÛn JimÈnez Reyes";
     private static final String DNI_JRJR = "11223344B";
     private static final String TELEFONO_JRJR = "950112233";
     private static final String CORREO_JRJR = "joseramon.jimenez@iesalandalus.org";
@@ -49,7 +48,7 @@ public class MatriculaTest {
 
 
     private static final String CODIGO_ASIGNATURA="0100";
-    private static final String NOMBRE_ASIGNATURA="Programaci√≥n";
+    private static final String NOMBRE_ASIGNATURA="ProgramaciÛn";
     private static final int HORAS_ASIGNATURA=256;
     private static final Curso CURSO_ASIGNATURA=Curso.PRIMERO;
     private static final int HORAS_DESDOBLE_ASIGNATURA=4;
@@ -61,14 +60,14 @@ public class MatriculaTest {
     private static final int HORAS_DESDOBLE_ASIGNATURA_2=3;
 
     private static final String CODIGO_ASIGNATURA_3="0300";
-    private static final String NOMBRE_ASIGNATURA_3="Administraci√≥n de Sistemas Operativos";
+    private static final String NOMBRE_ASIGNATURA_3="AdministraciÛn de Sistemas Operativos";
     private static final int HORAS_ASIGNATURA_3=120;
     private static final Curso CURSO_ASIGNATURA_3=Curso.SEGUNDO;
     private static final int HORAS_DESDOBLE_ASIGNATURA_3=0;
     private static final EspecialidadProfesorado ESPECIALIDAD_PROFESORADO_ASIGNATURA_2=EspecialidadProfesorado.SISTEMAS;
 
     private static final int CODIGO_CF_1=1225;
-    private static final String FAMILIA_PROFESIONAL_CF="Inform√°tica y Comunicaciones";
+    private static final String FAMILIA_PROFESIONAL_CF="Inform·tica y Comunicaciones";
     private static final String NOMBRE_CICLO_FORMATIVO="DAW";
     private static final Grado GRADO_CF=Grado.GDCFGS;
     private static final int HORAS_CICLO_FORMATIVO=1000;
@@ -391,9 +390,7 @@ public class MatriculaTest {
             }
 
 
-
-
-            String cadenaEsperada=String.format("idMatricula=%d, curso acad√©mico=%s, fecha matriculaci√≥n=%s, alumno=%s, Asignaturas={ %s}",
+            String cadenaEsperada=String.format("idMatricula=%d, curso acadÈmico=%s, fecha matriculaciÛn=%s, alumno=%s, Asignaturas={ %s}",
                     ID_MATRICULA, CURSO_ACADEMICO,
                     FECHA_MATRICULACION.format(DateTimeFormatter.ofPattern(Matricula.FORMATO_FECHA)),
                     alumno.imprimir(), resultado.toString());
@@ -402,7 +399,7 @@ public class MatriculaTest {
 
             matricula.setFechaAnulacion(FECHA_ANULACION);
 
-            cadenaEsperada=String.format("idMatricula=%d, curso acad√©mico=%s, fecha matriculaci√≥n=%s, fecha anulaci√≥n=%s, alumno=%s, Asignaturas={ %s}",
+            cadenaEsperada=String.format("idMatricula=%d, curso acadÈmico=%s, fecha matriculaciÛn=%s, fecha anulaciÛn=%s, alumno=%s, Asignaturas={ %s}",
                     ID_MATRICULA, CURSO_ACADEMICO,
                     FECHA_MATRICULACION.format(DateTimeFormatter.ofPattern(Matricula.FORMATO_FECHA)),
                     FECHA_ANULACION.format(DateTimeFormatter.ofPattern(Matricula.FORMATO_FECHA)),
@@ -420,13 +417,11 @@ public class MatriculaTest {
 
     @Test
     void imprimirDevuelveLaCadenaEsperada() {
-
-
         try
         {
             Matricula matricula = new Matricula(ID_MATRICULA, CURSO_ACADEMICO, FECHA_MATRICULACION, alumno, coleccionAsignaturas);
 
-            String cadenaEsperada=String.format("idMatricula=%d, curso acad√©mico=%s, fecha matriculaci√≥n=%s, alumno={%s}",
+            String cadenaEsperada=String.format("idMatricula=%d, curso acadÈmico=%s, fecha matriculaciÛn=%s, alumno={%s}",
                     ID_MATRICULA, CURSO_ACADEMICO,
                     FECHA_MATRICULACION.format(DateTimeFormatter.ofPattern(Matricula.FORMATO_FECHA)),
                     alumno.imprimir());
@@ -440,5 +435,4 @@ public class MatriculaTest {
 
 
     }
-*/
 }
